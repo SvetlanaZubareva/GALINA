@@ -43,21 +43,36 @@
                     ОТВЕТЫ НА ВОПРОСЫ
                 </a>
             </li>
-            <li class="header-about-us__li">
-                <div class="hamburger-menu">
+            <li class="header-about-us__li main-nav">
+                <div class="hamburger-menu ">
                     <input id="menu__toggle" type="checkbox" />
                     <label class="menu__btn" for="menu__toggle">
                       <span></span>
                     </label>
-                    <ul class="menu__box">
-                      <li><a class="menu__item" href="index.html #z">ЧЕМ ПОЛЕЗЕН КУРС</a></li>
-                      <li><a class="menu__item" href="#2">КУРС ПРЕПОДАЕТ</a></li>
-                      <li><a class="menu__item" href="#3">ПРОГРАММА</a></li>
-                      <li><a class="menu__item" href="#4">ОТВЕТЫ НА ВОПРОСЫ</a></li>
-                      <li><a class="menu__item" href="tel:+7-904-603-79-61">8-904-603-79-61</a></li>
+                    <ul class="menu__box ">
+                      <li><a class="menu__item main-nav__toggle" href="#z">ЧЕМ ПОЛЕЗЕН КУРС</a></li>
+                      <li><a class="menu__item main-nav__toggle1" href="#e">КУРС ПРЕПОДАЕТ</a></li>
+                      <li><a class="menu__item main-nav__toggle2" href="#t">ПРОГРАММА</a></li>
+                      <li><a class="menu__item main-nav__toggle3"  href="#i">ОТВЕТЫ НА ВОПРОСЫ</a></li>
+                      <li><a class="menu__item main-nav__toggle4" href="tel:+7-904-603-79-61">8-904-603-79-61</a></li>
                     </ul>
                   </div>
             </li>
+            <!-- <li class="header-about-us__li main-nav">
+                <div class="hamburger-menu ">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu__box ">
+                      <li><a class="menu__item main-nav__toggle" href="#z">ЧЕМ ПОЛЕЗЕН КУРС</a></li>
+                      <li><a class="menu__item main-nav__toggle1" href="#e">КУРС ПРЕПОДАЕТ</a></li>
+                      <li><a class="menu__item main-nav__toggle" href="#t">ПРОГРАММА</a></li>
+                      <li><a class="menu__item main-nav__toggle" href="#i">ОТВЕТЫ НА ВОПРОСЫ</a></li>
+                      <li><a class="menu__item main-nav__toggle" href="tel:+7-904-603-79-61">8-904-603-79-61</a></li>
+                    </ul>
+                  </div>
+            </li> -->
         </ul>
         <!-- <nav class="nav-about-us">
             <ul class="nav-about-us__ul">
@@ -154,7 +169,7 @@
                 </ul>
             </section>
             <section class="main-index__section main-index__section3" id="2">
-                <h2 class="main-index__section-h2 main-index__section-h2--grid">
+                <h2 class="main-index__section-h2 main-index__section-h2--grid" id="e">
                     КУРС ПРЕПОДАЕТ
                 </h2>
                 <img class="main-index__section-h2--grid-img" src="./img/jpg/oREwDwJVVzA.jpg" alt="Волосы" width="100%" height="116px">
@@ -187,7 +202,7 @@
                 <img class="img-top" src="./img/jpg/photo_2023-02-07_19-43-52.jpg" alt="Диплом" width="100%" height="320px">
             </section>
             <section class="main-index__section main-index__section4" id="3">
-                <h2 class="main-index__section-h2">
+                <h2 class="main-index__section-h2" id="t">
                     ПРОГРАММА
                 </h2>
                 <ul class="ul">
@@ -266,7 +281,7 @@
                 </ul>
             </section>
             <section class="main-index__section" id="4">
-                <h2 class="main-index__section-h2 main-index__section-h2--grid">
+                <h2 class="main-index__section-h2 main-index__section-h2--grid" id="i">
                     ОТВЕТЫ НА ВОПРОСЫ
                 </h2>
                 <ul class="main-index__section__ul main-index__section__ul1">
@@ -345,6 +360,64 @@
                 </ul>
             </li>
         </ul>
-    </footer>  
+    </footer> 
+    <script>
+        let navMain = document.querySelector('.main-nav');
+        let navToggle = document.querySelector('.main-nav__toggle');
+        let navToggle1 = document.querySelector('.main-nav__toggle1');
+        let navToggle2 = document.querySelector('.main-nav__toggle1');
+        let navToggle3 = document.querySelector('.main-nav__toggle1');
+        let navToggle4 = document.querySelector('.main-nav__toggle1');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+        }); 
+        navToggle1.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+        }); 
+        navToggle2.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+        });
+        navToggle3.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+        });
+        navToggle4.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+        });
+
+    </script>
+    
 </body>
 </html>
