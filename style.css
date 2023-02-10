@@ -402,9 +402,18 @@
   .svg-color1:hover{
     fill: #DF2E2E;
   }
+  .header-about-us__li:nth-child(6){
+    display: block;
+  }
+  .header-about-us__li:nth-child(7){
+    display: none;
+  }
   
   
 @media(max-width:767px){
+  .header-about-us__li:nth-child(7){
+    display: block;
+  }
   .header-about-us__li:nth-child(3){
     display: block;
   }
@@ -429,10 +438,16 @@
 .header-about-us__li:nth-child(5){
   display: none;
 }
+.header-about-us__li:nth-child(6){
+  display: none;
+}
 .header-about-us{
   padding-top: 10px;
 }
 .display-none{
+  display: none;
+}
+.header-about-us__li:nth-child(6){
   display: none;
 }
 }
@@ -446,9 +461,7 @@
     grid-row-start: 1;
     grid-row-end: 3;
   }
-  .header-about-us__li:nth-child(6){
-    display: none;
-  }
+  
   .header-about-us__ul{
     display: flex;
     justify-content: space-between;
