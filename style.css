@@ -414,6 +414,10 @@
   .ul-tovar10{
     margin: 20px 20% 20px;
   }
+  .section__img-top{
+    display: grid;
+    gap: 5%;
+  }
   
   
 @media(max-width:767px){
@@ -475,7 +479,7 @@
     padding: 50px 5% 50px;
   }
   .main-index__section{
-    padding: 300px 5% 0;
+    padding: 0 5% 0;
     display: grid;
     grid-template-columns: 40% 30% 30%;
   }
